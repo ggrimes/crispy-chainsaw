@@ -18,15 +18,15 @@ log.info """\
          """
          .stripIndent()
 
-sra_ch = Channel
+/*sra_ch = Channel
     .fromSRA(params.sra)
     .view()
+*/
 
-
-/*sra_ch = Channel
+sra_ch = Channel
         .fromFilePairs("data/raw_reads/SRR4204500/*{1,2}.fastq.gz")
         .view()
-*/
+
 
 
 process cutadapt {
