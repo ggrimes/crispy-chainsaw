@@ -13,7 +13,7 @@ log.info """\
          R N A S E Q - N F   P I P E L I N E
          ===================================
          SRA:         : ${params.outdir}
-         outdir:      : ${params.outdir}
+         outdir:      : ${params.sra}
          kmers        : ${kmers}
          """
          .stripIndent()
@@ -105,6 +105,6 @@ process combined_stats {
 
  script:
  """
- grep -H 'contig N/L50' ${stats} > combined_stats.txt
+ grep -H 'contig N/L50' ${stats}|sort > combined_stats.txt
  """
 }
