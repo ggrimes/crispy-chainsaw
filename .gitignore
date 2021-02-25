@@ -1,2 +1,5 @@
-*.nextflow
+*.nextflow*
+*data
+*results
+*work
 .env
