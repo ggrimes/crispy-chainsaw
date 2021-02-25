@@ -24,7 +24,7 @@ log.info """\
 */
 
 sra_ch = Channel
-        .fromFilePairs("data/raw_reads/SRR4204500/*{1,2}.fastq.gz")
+        .fromFilePairs("${projectDir}/data/raw_reads/SRR4204500/*{1,2}.fastq.gz")
         .view()
 
 
