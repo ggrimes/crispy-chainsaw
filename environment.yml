@@ -1,0 +1,9 @@
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - bbmap=38.90
+  - velvet=1.2
+  - cutadapt=3.2
+  - graphviz=2.46.1
